@@ -4,7 +4,7 @@
   <link rel="icon" type="image/png" href="assets/escudofavicon.png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio - Horizons</title>
+  <title>Cursos - Horizons</title>
   <link href="./dist/output.css" rel="stylesheet" />
 </head>
 
@@ -26,17 +26,17 @@
     </div>
   </header>
 
-  <!-- CONTENIDO CON TRANSICIÓN -->
+  <!-- CONTENIDO CON EFECTO -->
   <div id="contenido" class="opacity-0 transition-opacity duration-1000">
     <main class="max-w-4xl mx-auto mt-10 px-4">
-      <h2 class="text-3xl font-semibold mb-4">Bienvenido al Instituto</h2>
+      <h2 class="text-3xl font-semibold mb-4">Nuestros Cursos</h2>
       <p class="text-lg">
-        Este es el portal principal del Instituto Horizons
+        Este sitio será utilizado para dar a conocer los cursos disponibles, sus horarios y demás detalles importantes para estudiantes.
       </p>
     </main>
   </div>
 
-  <!-- SCRIPT PARA FADE-IN Y FADE-OUT -->
+  <!-- SCRIPT PARA EFECTO DE TRANSICIÓN -->
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       document.getElementById("contenido").classList.add("opacity-100");
@@ -51,7 +51,7 @@
         contenido.classList.add("opacity-0");
         setTimeout(() => {
           window.location.href = destino;
-        }, 300); // debe coincidir con duration-500 (500ms) en Tailwind
+        }, 300);
       });
     });
   </script>
